@@ -1,7 +1,7 @@
 import { ColumnsType } from "antd/es/table";
 import "./index.less";
 
-export const columns = (): ColumnsType<any> => {
+export const columns = (): ColumnsType<IPageExportExcel.List> => {
   return [
     {
       title: "ID",
@@ -22,7 +22,7 @@ export const columns = (): ColumnsType<any> => {
     {
       title: "照片",
       key: "goodsUrl",
-      render: (item: any) => (
+      render: (item: IPageExportExcel.ListItem) => (
         <img className="goods_url" src={item.goodsUrl} alt="" />
       ),
     },

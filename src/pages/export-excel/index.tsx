@@ -44,13 +44,13 @@ const ExportExcel: FC = () => {
   return (
     <div className="export_excel_container">
       <Button onClick={onExportExcel}>文件导出</Button>
-      <Table<any>
+      <Table<IPageExportExcel.ListItem>
         className="table_container"
         rowSelection={downloadRowSelection}
-        rowKey={(item: any) => item.id}
+        rowKey={(item) => item.id}
         dataSource={list}
         loading={loading}
-        columns={columns()}
+        columns={columns() as IPageExportExcel.List}
         pagination={{
           showQuickJumper: true,
           showSizeChanger: true,
