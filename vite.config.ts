@@ -77,8 +77,7 @@ export default defineConfig({
       "@helper": resolvePath("src/helper"),
       "@api": resolvePath("src/api"),
       "@utils": resolvePath("src/utils"),
-      "@css": resolvePath("src/assets/css"),
-      "@img": resolvePath("src/assets/img"),
+      "@mock": resolvePath("src/mock"),
     },
   },
 });

@@ -19,6 +19,8 @@
 		"antd-mobile": "^5.24.0",
 		"antd-mobile-icons": "^0.3.0",
 		"dayjs": "^1.10.6",
+		"exceljs": "^4.3.0",
+		"file-saver": "^2.0.5",
 		"flyio": "^0.6.14",
 		"jairwin-utils": "^0.3.5",
 		"lodash": "^4.17.21",
@@ -35,6 +37,7 @@
 		"@commitlint/cli": "^15.0.0",
 		"@commitlint/config-angular": "^15.0.0",
 		"@commitlint/config-conventional": "^15.0.0",
+		"@types/file-saver": "^2.0.5",
 		"@types/mockjs": "^1.0.6",
 		"@types/node": "^15.6.0",
 		"@types/react": "^18.0.0",
@@ -98,8 +101,8 @@
 		]
 	},
 	"engines": {
-    "node": ">=14"
-  },
+		"node": ">=14"
+	},
 	"npm": {
 		"mode": "yarn"
 	},
