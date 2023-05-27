@@ -3,9 +3,13 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import { App } from "./app";
-import "dayjs/locale/zh-cn";
 import zhCN from "antd/lib/locale/zh_CN";
+import dayjs from "dayjs";
+import "dayjs/locale/zh-cn";
 import "./index.less";
+
+dayjs.locale("zh-cn");
+
 // 解决safari自带放大功能：阻止双击放大
 let lastTime = 0;
 document.addEventListener("touchstart", (event) => {

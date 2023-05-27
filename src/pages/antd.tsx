@@ -1,8 +1,8 @@
 import { Divider, Button, Form, Input } from "antd";
 import type { Store } from "antd/es/form/interface";
-import { DatePicker } from "@components";
+// import { DatePicker } from "@components";
 
-const { RangePicker } = DatePicker;
+// const { RangePicker } = DatePicker;
 
 const Antd = () => {
   const [form] = Form.useForm();
@@ -29,12 +29,12 @@ const Antd = () => {
         >
           <Input placeholder="请输入input" />
         </Form.Item>
-        <Form.Item name="datePicker" label="datePicker">
+        {/* <Form.Item name="datePicker" label="datePicker">
           <DatePicker />
         </Form.Item>
         <Form.Item name="rangePicker" label="rangePicker">
           <RangePicker />
-        </Form.Item>
+        </Form.Item> */}
       </Form>
       <Button type="primary" onClick={() => form.submit()}>
         确定

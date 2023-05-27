@@ -1,23 +1,21 @@
 *,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   -webkit-tap-highlight-color: transparent;
 }
 body {
   min-width: 320px;
   max-width: 640px;
   margin: 0 auto;
-  color: @default_black;
-  font-size: @commonFontSize;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
-    Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC",
+    "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei",
     sans-serif;
+  font-size: @commonFontSize;
+  color: @default_black;
   background: #f5f5f9;
-  -webkit-text-size-adjust: 100% !important;
   text-size-adjust: 100% !important;
 }
 a {

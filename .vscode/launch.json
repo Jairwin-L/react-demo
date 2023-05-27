@@ -4,7 +4,7 @@
 			"name": "Launch Chrome",
 			"request": "launch",
 			"type": "pwa-chrome",
-			"url": "http://dev.jairwin.cn:7060",
+			// "url": "http://dev.jairwin.cn:7060",
 			"webRoot": "${workspaceFolder}",
 		}
 	]

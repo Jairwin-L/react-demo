@@ -38,7 +38,6 @@ export default defineConfig({
   esbuild: {},
   optimizeDeps: {},
   server: {
-    host: "dev.jairwin.cn",
     port: 7060,
   },
   css: {
