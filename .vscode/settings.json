@@ -1,90 +1,116 @@
 {
-	"workbench.startupEditor": "newUntitledFile",
-	"breadcrumbs.enabled": true,
-	"emmet.triggerExpansionOnTab": true,
-	"vetur.validation.template": false,
-	"eslint.validate": [
-		"typescript",
-		"javascript",
-		{
-			"language": "tsx",
-			"autoFix": true
-		},
-		"html",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact"
-	],
-	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-	"eslint.run": "onSave",
-	"eslint.options": {
-		"extensions": [
-			".js",
-			".vue"
-		]
-	},
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"files.associations": {
-		"*.cjson": "jsonc",
-		"*.wxss": "css",
-		"*.wxs": "javascript",
-		"*.wpy": "vue",
-		"*.vue": "vue",
-		"*.mpx": "vue",
-		"*.less": "less"
-	},
-	"emmet.includeLanguages": {
-		"wxml": "html"
-	},
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/dist": true
-	},
-	"editor.minimap.enabled": true,
-	"editor.minimap.renderCharacters": false,
-	"window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-	"editor.detectIndentation": false,
-	"editor.tabSize": 2,
-	"git.confirmSync": false,
-	"git.enableSmartCommit": true,
-	"git.autofetch": true,
-	"javascript.format.insertSpaceAfterConstructor": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"vetur.format.defaultFormatter.html": "js-beautify-html",
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"editor.quickSuggestions": {
-		"strings": true
-	},
-	"editor.formatOnPaste": false,
-	"editor.formatOnType": false,
-	"workbench.colorTheme": "Monokai",
-	"[markdown]": {
-		"editor.formatOnSave": true,
-		"editor.wordWrap": "on",
-		"editor.renderWhitespace": "all",
-		"editor.acceptSuggestionOnEnter": "off"
-	},
-	"gitlens.hovers.currentLine.over": "line",
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"browser-preview.startUrl": "https://www.google.com",
-	"cSpell.enableFiletypes": [
-		"!asciidoc",
-		"nginx"
-	],
-	"cSpell.userWords": [
-		"antd",
-		"baomitu",
-	],
-	"editor.insertSpaces": false,
-	"editor.tabCompletion": "on",
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"files.autoSave": "afterDelay"
+  "workbench.startupEditor": "newUntitledFile",
+  "breadcrumbs.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "vetur.validation.template": false,
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    {
+      "language": "tsx",
+      "autoFix": true
+    },
+    "html",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.wpy": "vue",
+    "*.vue": "vue",
+    "*.mpx": "vue",
+    "*.less": "less"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "workbench.colorTheme": "Monokai",
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off"
+  },
+  "gitlens.hovers.currentLine.over": "line",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "browser-preview.startUrl": "https://www.google.com",
+  "cSpell.enableFiletypes": ["!asciidoc", "nginx"],
+  "cSpell.userWords": ["antd", "baomitu"],
+  "editor.insertSpaces": false,
+  "editor.tabCompletion": "on",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "stylelint.validate": ["css", "scss", "less"],
+  "editor.rulers": [100],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

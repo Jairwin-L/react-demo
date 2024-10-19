@@ -1,77 +1,110 @@
 {
   "name": "react-demo",
   "version": "0.0.0",
+  "homepage": "https://github.com/Jairwin-L/react-demo#readme",
+  "bugs": {
+    "url": "https://github.com/Jairwin-L/react-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jairwin-L/react-demo.git"
+  },
+  "funding": "https://github.com/sponsors/Jairwin-L",
+  "author": {
+    "name": "Jairwin",
+    "email": "jairwin@jairwin.cn"
+  },
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "rf": "rm -rf node_modules",
+    "dev": "vite",
+    "f2elint-fix": "f2elint fix",
     "f2elint-scan": "f2elint scan",
-    "f2elint-fix": "f2elint fix"
+    "lint": "eslint . && stylelint \"**/*.{css,less,scss}\"",
+    "lint:fix": "prettier --write . && eslint --fix . && stylelint --fix \"**/*.{css,less,scss}\"",
+    "prepare": "husky",
+    "preview": "vite preview"
+  },
+  "commitlint": {
+    "extends": [
+      "ali"
+    ]
+  },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    "*.{css,less,scss}": "stylelint --fix",
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
+  },
+  "prettier": "prettier-config-ali",
+  "eslintConfig": {
+    "extends": [
+      "ali/typescript/react",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-ali",
+      "stylelint-prettier/recommended"
+    ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "@pansy/china-division": "^2.0.0",
-    "ahooks": "^3.3.10",
-    "antd": "^4.21.7",
-    "antd-mobile": "^5.24.0",
+    "@ant-design/icons": "^4.8.3",
+    "@pansy/china-division": "^2.1.0",
+    "ahooks": "^3.8.1",
+    "antd": "^4.24.16",
+    "antd-mobile": "^5.37.1",
     "antd-mobile-icons": "^0.3.0",
-    "dayjs": "^1.10.6",
+    "dayjs": "^1.11.13",
     "flyio": "^0.6.14",
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "terser": "^5.14.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "terser": "^5.36.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/eslint-plugin": "^7.14.5",
-    "@types/mockjs": "^1.0.6",
-    "@types/node": "^15.6.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@babel/core": "^7.25.8",
+    "@babel/eslint-plugin": "^7.25.7",
+    "@commitlint/cli": "^19.5.0",
+    "@types/mockjs": "^1.0.10",
+    "@types/node": "^15.14.9",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
     "@types/react-router-dom": "^5.3.3",
-    "@vitejs/plugin-legacy": "^1.6.4",
-    "f2elint": "^2.2.1",
-    "husky": "^7.0.4",
-    "less": "^4.1.1",
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "commitlint-config-ali": "^1.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-ali": "^15.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "less": "^4.2.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-config-ali": "^1.3.2",
     "rollup-plugin-external-globals": "^0.6.1",
-    "rollup-plugin-visualizer": "^5.5.2",
-    "typescript": "^4.5.4",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-ali": "^2.1.1",
+    "stylelint-prettier": "^5.0.2",
+    "typescript": "^4.9.5",
     "unplugin-auto-import": "^0.5.11",
-    "vite": "^4.0.4",
-    "vite-plugin-compression": "^0.3.0",
-    "vite-plugin-externals": "^0.1.5",
-    "vite-plugin-style-import": "^1.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "f2elint commit-file-scan",
-      "commit-msg": "f2elint commit-msg-scan",
-      "pre-add": "lint-staged",
-      "pre-push": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/*.{js,jsx,mjs,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add",
-      "git commit -am"
-    ]
+    "vite": "^4.5.5",
+    "vite-plugin-compression": "^0.3.6",
+    "vite-plugin-externals": "^0.1.7",
+    "vite-plugin-style-import": "^1.4.1"
   },
   "engines": {
     "node": ">=14"
+  },
+  "cnpm": {
+    "mode": "pnpm"
   },
   "npm": {
     "mode": "pnpm"
   },
   "yarn": {
-    "mode": "pnpm"
-  },
-  "cnpm": {
     "mode": "pnpm"
   }
 }

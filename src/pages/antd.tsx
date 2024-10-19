@@ -1,5 +1,5 @@
-import { Divider, Button, Form, Input } from "antd";
-import type { Store } from "antd/es/form/interface";
+import { Divider, Button, Form, Input } from 'antd';
+import type { Store } from 'antd/es/form/interface';
 // import { DatePicker } from "@components";
 
 // const { RangePicker } = DatePicker;
@@ -7,7 +7,7 @@ import type { Store } from "antd/es/form/interface";
 const Antd = () => {
   const [form] = Form.useForm();
   const onFinish = (value: Store) => {
-    console.log("antd.value----->：", value);
+    console.log('antd.value----->：', value);
   };
   return (
     <>
@@ -21,7 +21,7 @@ const Antd = () => {
               required: true,
               validator: (_, value, callback) => {
                 if (!value) {
-                  callback("请输入input");
+                  callback('请输入input');
                 }
               },
             },

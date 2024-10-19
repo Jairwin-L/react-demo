@@ -14,10 +14,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-		"jsx": "react-jsx",
-		"paths": {
-			"@*": ["./src/*"]
-		}
+    "jsx": "react-jsx",
+    "paths": {
+      "@*": ["./src/*"]
+    }
   },
-  "include": ["./src", "src/pages/auth/.tsx"]
+  "include": ["./src", "vite.config.ts", "auto-imports.d.ts", "stylelint.config.js"]
 }

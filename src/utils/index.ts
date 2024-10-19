@@ -1,1 +1,1 @@
-export const APP_NAME = "react-demo";
+export const APP_NAME = 'react-demo';

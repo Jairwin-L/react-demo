@@ -1,7 +1,7 @@
 // import { useState } from "react";
-import { DatePicker } from "antd";
+import { DatePicker } from 'antd';
 
-export default (): JSX.Element => {
+export default function Page() {
   // const [formValues, setFormValues] = useState({
   //   name: "",
   // });
@@ -27,4 +27,4 @@ export default (): JSX.Element => {
       </div>
     </div>
   );
-};
+}

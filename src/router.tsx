@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import Demo from "@pages/antd";
+import { ReactNode } from 'react';
+import Demo from '@pages/antd';
 
 interface IRouter {
   path: string;
@@ -11,7 +11,7 @@ interface IRouter {
 
 export const routers: IRouter[] = [
   {
-    path: "/",
+    path: '/',
     element: <Demo />,
   },
 ];
